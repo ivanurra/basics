@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Header() {
+export default function Header({title}) {
 
     return (
-        <h1 className="header">Virtual Shop</h1>
+        <h1 className="header">{title}</h1>
     )
 }
 
