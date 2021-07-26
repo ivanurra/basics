@@ -12,6 +12,8 @@ function App() {
     { id: 4, name: 'Shoes', price: 80},
   ]);
 
+  const [cart, addProduct] = useState([])
+
   const date = new Date().getFullYear();
 
   return (
@@ -23,8 +25,11 @@ function App() {
       <h1>List of products</h1>
       {products.map(product => (
         <Product
-          key={product.id}
-          product={product}
+            key={product.id}
+            product={product}
+            products={products}
+            cart={cart}
+            addProduct={addProduct}
         />
       ))}
 
