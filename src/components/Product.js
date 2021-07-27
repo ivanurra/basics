@@ -4,7 +4,10 @@ const Product = ({product, cart, addProduct, products}) => {
 
     const selectProduct = (id) => {
         const product = products.filter(product => product.id === id)[0];
-        console.log(product);
+        addProduct([
+            ...cart,
+            product
+        ]);
     }
 
     return (
