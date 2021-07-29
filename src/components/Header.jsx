@@ -6,4 +6,3 @@ export default function Header({title}) {
         <h1 className="header">{title}</h1>
     )
 }
-

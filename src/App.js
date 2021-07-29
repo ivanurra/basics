@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Product from "./components/Product";
 
-function App() {
+export default function App() {
 
   const [ products, setProducts] = useState([
     { id: 1, name: 'Tshirt', price: 30},
@@ -44,5 +44,3 @@ function App() {
     </Fragment>
   );
 }
-
-export default App;
