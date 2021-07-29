@@ -3,7 +3,7 @@ import Product from "./Product";
 import './cart.css';
 
 
-const Cart = ({cart}) => (
+const Cart = ({cart, addProduct}) => (
     <div className="cart">
         <h3>Your shopping cart</h3>
         {cart.length === 0
@@ -14,6 +14,8 @@ const Cart = ({cart}) => (
             <Product 
                 key={product.id}
                 product={product}
+                cart={cart}
+                addProduct={addProduct}
             />
         ))}
     </div>
