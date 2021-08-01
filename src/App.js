@@ -20,7 +20,7 @@ export default function App() {
   return (
     <Fragment>
       <Header 
-        title="Virtual Shop"
+        title="Fake Shop"
       />
 
       <h1>List of products</h1>
