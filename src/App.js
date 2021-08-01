@@ -6,6 +6,7 @@ import Product from "./components/Product";
 
 export default function App() {
 
+  // List of products
   const [ products, setProducts] = useState([
     { id: 1, name: 'Tshirt', price: 30},
     { id: 2, name: 'Jeans', price: 60},
@@ -15,6 +16,7 @@ export default function App() {
 
   const [cart, addProduct] = useState([])
 
+  // Get the date
   const date = new Date().getFullYear();
 
   return (
