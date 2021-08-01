@@ -1,0 +1,12 @@
+.product {
+    color: red;
+    margin-top: 50px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.button{
+    background-color: aquamarine;
+}

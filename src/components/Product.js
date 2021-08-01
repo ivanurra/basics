@@ -1,4 +1,5 @@
 import React from "react";
+import './product.css';
 
 const Product = ({ product, cart, addProduct, products }) => {
   const selectProduct = (id) => {
@@ -13,10 +14,10 @@ const Product = ({ product, cart, addProduct, products }) => {
 
   return (
     <div>
-      <h2>{product.name}</h2>
-      <p>${product.price}</p>
+      <h2 className="product">{product.name}</h2>
+      <p className="price">${product.price}</p>
       {products ? (
-        <button type="button" onClick={() => selectProduct(product.id)}>
+        <button className="button" type="button" onClick={() => selectProduct(product.id)}>
           Buy item
         </button>
       ) : (
