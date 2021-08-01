@@ -1,7 +1,10 @@
 import React from "react";
 import './product.css';
 
-const Product = ({ product, cart, addProduct, products }) => {
+const Product = ({product, cart, addProduct, products }) => {
+
+  const {name, price, id} = product;
+
   const selectProduct = (id) => {
     const product = products.filter((product) => product.id === id)[0];
     addProduct([...cart, product]);
@@ -14,10 +17,10 @@ const Product = ({ product, cart, addProduct, products }) => {
 
   return (
     <div>
-      <h2 className="product">{product.name}</h2>
-      <p className="price">${product.price}</p>
+      <h2 className="product">{name}</h2>
+      <p className="price">${price}</p>
       {products ? (
-        <button className="button" type="button" onClick={() => selectProduct(product.id)}>
+        <button className="button" type="button" onClick={() => selectProduct(id)}>
           Buy item
         </button>
       ) : (
